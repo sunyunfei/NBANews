@@ -1,0 +1,6 @@
+framework module Pods_NBANews {
+  umbrella header "Pods-NBANews-umbrella.h"
+
+  export *
+  module * { export * }
+}

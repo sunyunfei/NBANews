@@ -1,0 +1,26 @@
+PODS:
+  - BmobSDK (2.1.5)
+  - IQKeyboardManager (4.0.8)
+  - MJRefresh (3.1.12)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - UITableView+FDTemplateLayoutCell (1.4)
+
+DEPENDENCIES:
+  - BmobSDK
+  - IQKeyboardManager
+  - MJRefresh
+  - SDWebImage
+  - UITableView+FDTemplateLayoutCell
+
+SPEC CHECKSUMS:
+  BmobSDK: 9b4ae6d8de903affaee9703cf082f7f6b03ceba4
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+
+PODFILE CHECKSUM: 19ab5698dad67ae293562f2ad73c01ae836dbe1b
+
+COCOAPODS: 1.1.1
