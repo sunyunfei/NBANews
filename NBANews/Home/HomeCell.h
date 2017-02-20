@@ -6,8 +6,8 @@
 //  Copyright © 2017年 孙云飞. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YFBaseCell.h"
 #import "HomeModel.h"
-@interface HomeCell : UITableViewCell
+@interface HomeCell : YFBaseCell
 @property(nonatomic,strong)HomeModel *homeModel;//接受数据
 @end

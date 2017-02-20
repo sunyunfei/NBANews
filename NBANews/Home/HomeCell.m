@@ -17,6 +17,11 @@
 @end
 @implementation HomeCell
 
+- (void)awakeFromNib{
+
+    [super awakeFromNib];
+    [self setBaseColorForGlobal];
+}
 //数据处理
 - (void)setHomeModel:(HomeModel *)homeModel{
 

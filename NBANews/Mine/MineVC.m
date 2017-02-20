@@ -8,6 +8,8 @@
 
 #import "MineVC.h"
 #import "LoginVC.h"
+#import "LikeVC.h"
+#import "PhotoShowManager.h"
 #import <SDWebImage/UIButton+WebCache.h>
 @interface MineVC ()
 @property (weak, nonatomic) IBOutlet UIButton *mineIcon;//头像
@@ -15,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *mineType;//夜间模式
 @property (weak, nonatomic) IBOutlet UILabel *loginLabel;//登录注册
 - (IBAction)clickIconBtn:(UIButton *)sender;//点击头像事件
+- (IBAction)clickSwitchEvent:(UISwitch *)sender;
 
 @end
 
@@ -25,6 +28,7 @@
     
     self.mineIcon.layer.cornerRadius = CGRectGetWidth(self.mineIcon.frame) / 2;
     self.mineIcon.layer.masksToBounds = YES;
+    self.mineType.on = [YFDefaultsManager obtainIsNightStatus];
     
     //判断是否登陆
     if ([YFDefaultsManager obtainIsLoginStatus:login_status]) {
@@ -73,8 +77,31 @@
         }
     }];
 }
+//模式设置
+- (IBAction)clickSwitchEvent:(UISwitch *)sender {
+    
+    [YFDefaultsManager saveNightBoolDefaultsData:sender.isOn];
+    [[NSNotificationCenter defaultCenter] postNotificationName:Night_Not object:nil];
+}
 
 - (IBAction)clickIconBtn:(UIButton *)sender {
+    
+    //判断是否登陆
+    if (![YFDefaultsManager obtainIsLoginStatus:login_status]) {
+        [LoginManager skipLoginVC];
+    }else{
+    
+        //跳转相册
+        PhotoShowManager *photoManager = [PhotoShowManager sharePhotoManager];
+        //图像传递
+        __block typeof(self)weakSelf = self;
+        photoManager.iconBlock = ^(UIImage *icon){
+            
+            [weakSelf.mineIcon setImage:icon forState:UIControlStateNormal];
+        };
+        [photoManager skipPhotoAlbumVC];
+    }
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -86,8 +113,19 @@
             switch (indexPath.row) {
                 case 0:
                 {
-                
                     //收藏
+                    if ([YFDefaultsManager obtainIsLoginStatus:login_status]) {
+                        
+                        LikeVC *likeVC = [[LikeVC alloc]init];
+                        likeVC.title = @"收藏";
+                        self.hidesBottomBarWhenPushed = YES;
+                        [self.navigationController pushViewController:likeVC animated:YES];
+                        self.hidesBottomBarWhenPushed = NO;
+                    }else{
+                    
+                        [LoginManager skipLoginVC];
+                    }
+                    
                 }
                     break;
                 case 2:{
@@ -127,4 +165,5 @@
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
+
 @end

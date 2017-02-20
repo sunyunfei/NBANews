@@ -16,6 +16,11 @@
 @end
 @implementation CommentCell
 
+- (void)awakeFromNib{
+
+    [super awakeFromNib];
+    [self setBaseColorForGlobal];
+}
 - (void)setCommentModel:(CommentModel *)commentModel{
 
     _commentModel = commentModel;

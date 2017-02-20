@@ -19,7 +19,7 @@
 }
 
 //存储用户id
-+ (void)saveNumber:(NSString *)name withData:(NSNumber *)userId{
++ (void)saveNumber:(NSString *)name withData:(NSString *)userId{
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:userId forKey:name];
@@ -34,7 +34,7 @@
 }
 
 //获取用户id
-+(NSNumber*)obtainUserId:(NSString *)name{
++(NSString*)obtainUserId:(NSString *)name{
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     return [defaults objectForKey:name];
@@ -47,5 +47,21 @@
     [defaults removeObjectForKey:name2];
     [defaults removeObjectForKey:name1];
     [defaults synchronize];
+}
+
+
+//全局颜色登陆的状态
++ (void)saveNightBoolDefaultsData:(BOOL)flag{
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:flag forKey:IS_NIGHT_MODE];
+    [defaults synchronize];
+}
+
+//全局颜色状态
++ (BOOL)obtainIsNightStatus{
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults boolForKey:IS_NIGHT_MODE];
 }
 @end

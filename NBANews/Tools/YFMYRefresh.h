@@ -13,4 +13,9 @@
 + (void)pushDownAndRefreshData:(UITableView *)tableView withResult:(void(^)())eventBlock;
 //上啦加载
 + (void)pushUpAndMoreData:(UITableView *)tableView withResult:(void(^)())eventBlock;
+
+//下啦刷新
++ (void)pushDownAndRefreshCollectionView:(UICollectionView *)tableView withResult:(void(^)())eventBlock;
+//上啦加载
++ (void)pushUpAndMoreCollectionView:(UICollectionView *)tableView withResult:(void(^)())eventBlock;
 @end

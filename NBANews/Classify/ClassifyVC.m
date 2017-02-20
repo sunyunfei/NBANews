@@ -11,12 +11,7 @@
 #import "YFRClassifyightView.h"
 #import "ClassCenterView.h"
 #import "DetailsVC.h"
-@interface ClassifyVC ()<YFSearchViewDelegate,YFRClassifyightViewDelegate,ClassCenterViewDelegate>{
-
-    //数据视图的位置
-    CGRect originRect;
-    CGRect moveRect;
-}
+@interface ClassifyVC ()<YFSearchViewDelegate,YFRClassifyightViewDelegate,ClassCenterViewDelegate>
 @property(nonatomic,strong)YFSearchView *searchView;//搜索视图
 @property(nonatomic,strong)YFRClassifyightView *rightView;//类别视图
 @property(nonatomic,strong)ClassCenterView *centerView;//显示数据视图
@@ -72,17 +67,13 @@
 }
 //加载显示数据表
 - (void)p_loadCenterView{
-
-    originRect = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
-    moveRect = CGRectMake(CGRectGetWidth(self.rightView.frame), 0, CGRectGetWidth(self.view.frame) - CGRectGetWidth(self.rightView.frame), CGRectGetHeight(self.view.frame));
     
-    self.centerView = [[ClassCenterView alloc]initWithFrame:originRect];
+    self.centerView = [[ClassCenterView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
     self.centerView.centerDelegate = self;
     [self.view addSubview:self.centerView];
     //把类别视图放在最上面
     [self.view bringSubviewToFront:self.rightView];
 }
-#pragma mark ----数据
 
 #pragma mark ----代理
 
@@ -101,7 +92,6 @@
         [UIView animateKeyframesWithDuration:0.3 delay:0.0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
             
             self.rightView.transform = CGAffineTransformIdentity;
-            self.centerView.frame = moveRect;
         } completion:^(BOOL finished) {
             
         }];
@@ -110,7 +100,6 @@
         [UIView animateKeyframesWithDuration:0.3 delay:0.0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
             
             self.rightView.transform = CGAffineTransformMakeTranslation(-K_W * 0.25 + 15, 0);
-            self.centerView.frame = originRect;
             
         } completion:^(BOOL finished) {
             

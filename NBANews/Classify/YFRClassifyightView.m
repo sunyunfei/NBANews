@@ -10,7 +10,7 @@
 #import "ClassRightCell.h"
 static NSString *right_cell = @"ClassRightCell";
 @interface YFRClassifyightView()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *tableView;//数据表
+@property(nonatomic,strong)YFBaseTableView *tableView;//数据表
 @property(nonatomic,strong)UIButton *activeBtn;//隐藏显示按钮
 @property(nonatomic,strong)NSMutableArray *dataArray;//数据
 @end
@@ -21,7 +21,8 @@ static NSString *right_cell = @"ClassRightCell";
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame) - 15, CGRectGetHeight(self.frame))];
+        self.tableView = [[YFBaseTableView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame) - 15, CGRectGetHeight(self.frame))];
+        [self.tableView setViewColor];
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         [self.tableView registerNib:[UINib nibWithNibName:right_cell bundle:nil] forCellReuseIdentifier:right_cell];
@@ -105,6 +106,9 @@ static NSString *right_cell = @"ClassRightCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    //隐藏
+    [self clickActiveBtn:self.activeBtn];
     if ([self.delegate respondsToSelector:@selector(giveRightTextToVC:)]) {
         
         [self.delegate giveRightTextToVC:self.dataArray[indexPath.row]];

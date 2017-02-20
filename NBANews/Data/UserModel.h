@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface UserModel : NSObject
-@property(nonatomic,strong)NSNumber *user_id;
+@property(nonatomic,copy)NSString *user_id;
 @property(nonatomic,copy)NSString *user_account;
 @property(nonatomic,copy)NSString *user_pwd;
 @property(nonatomic,copy)NSString *user_troops;

@@ -37,6 +37,7 @@ static NSString *center_cell = @"HomeCell";
             [weakSelf p_loadData];
         }];
         [self registerNib:[UINib nibWithNibName:center_cell bundle:nil] forCellReuseIdentifier:center_cell];
+        [self setViewColor];
     }
     return self;
 }
@@ -64,7 +65,7 @@ static NSString *center_cell = @"HomeCell";
             
             for (BmobObject *obj in array) {
                 
-                HomeModel *model = [[HomeModel alloc]initWithBmob:obj];
+                HomeModel *model = [[HomeModel alloc]initWithBmob:obj isLikeVC:NO];
                 [_dataArray addObject:model];
             }
             //刷新表

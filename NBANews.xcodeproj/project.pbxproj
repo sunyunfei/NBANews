@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052154831E599BDA00515B37 /* LikeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154821E599BDA00515B37 /* LikeVC.m */; };
+		052154921E59A58300515B37 /* UILabel+TextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154911E59A58300515B37 /* UILabel+TextColor.m */; };
+		052154951E59A7E800515B37 /* YFBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154941E59A7E800515B37 /* YFBaseCell.m */; };
+		052154981E59AEA200515B37 /* YFBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154971E59AEA200515B37 /* YFBaseTableView.m */; };
+		0521549E1E59B1DF00515B37 /* YFBaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521549D1E59B1DF00515B37 /* YFBaseCollectionCell.m */; };
+		052154A41E59B49F00515B37 /* YFmineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154A31E59B49F00515B37 /* YFmineCell.m */; };
+		052154A71E59B50000515B37 /* YFmineTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154A61E59B50000515B37 /* YFmineTableView.m */; };
+		052154AA1E59B59F00515B37 /* YFBaseNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154A91E59B59F00515B37 /* YFBaseNav.m */; };
+		052154AD1E59B81F00515B37 /* YFBaseTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154AC1E59B81F00515B37 /* YFBaseTabBarVC.m */; };
+		052154B01E59C2E000515B37 /* PhotoShowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 052154AF1E59C2E000515B37 /* PhotoShowManager.m */; };
 		052508291E570DEE0081FECC /* CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 052508281E570DEE0081FECC /* CommentModel.m */; };
 		0536B1051E56989500CBFC09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0536B1041E56989500CBFC09 /* main.m */; };
 		0536B1081E56989500CBFC09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0536B1071E56989500CBFC09 /* AppDelegate.m */; };
@@ -33,6 +43,12 @@
 		055E30751E582EBF00832B3D /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E30741E582EBF00832B3D /* UserModel.m */; };
 		055E30781E58332600832B3D /* YFDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E30771E58332600832B3D /* YFDefaultsManager.m */; };
 		055E307B1E58395200832B3D /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E307A1E58395200832B3D /* LoginManager.m */; };
+		055E30881E583C4500832B3D /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E30871E583C4500832B3D /* VideoModel.m */; };
+		055E308D1E583CCC00832B3D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E308C1E583CCC00832B3D /* AVFoundation.framework */; };
+		055E308F1E583CD100832B3D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055E308E1E583CD100832B3D /* AVKit.framework */; };
+		055E31071E584AA100832B3D /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E31061E584AA100832B3D /* VideoVC.m */; };
+		055E310B1E584C3200832B3D /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 055E31091E584C3200832B3D /* VideoCell.m */; };
+		055E310C1E584C3200832B3D /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 055E310A1E584C3200832B3D /* VideoCell.xib */; };
 		05E7151B1E56C1BC00A44893 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E715191E56C1BC00A44893 /* HomeCell.m */; };
 		05E7151C1E56C1BC00A44893 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E7151A1E56C1BC00A44893 /* HomeCell.xib */; };
 		05E7151F1E56CADD00A44893 /* CoreScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E7151E1E56CADD00A44893 /* CoreScrollView.m */; };
@@ -64,6 +80,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052154811E599BDA00515B37 /* LikeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeVC.h; sourceTree = "<group>"; };
+		052154821E599BDA00515B37 /* LikeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeVC.m; sourceTree = "<group>"; };
+		052154901E59A58300515B37 /* UILabel+TextColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextColor.h"; sourceTree = "<group>"; };
+		052154911E59A58300515B37 /* UILabel+TextColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextColor.m"; sourceTree = "<group>"; };
+		052154931E59A7E800515B37 /* YFBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFBaseCell.h; sourceTree = "<group>"; };
+		052154941E59A7E800515B37 /* YFBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBaseCell.m; sourceTree = "<group>"; };
+		052154961E59AEA200515B37 /* YFBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFBaseTableView.h; sourceTree = "<group>"; };
+		052154971E59AEA200515B37 /* YFBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBaseTableView.m; sourceTree = "<group>"; };
+		0521549C1E59B1DF00515B37 /* YFBaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFBaseCollectionCell.h; sourceTree = "<group>"; };
+		0521549D1E59B1DF00515B37 /* YFBaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBaseCollectionCell.m; sourceTree = "<group>"; };
+		052154A21E59B49F00515B37 /* YFmineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFmineCell.h; sourceTree = "<group>"; };
+		052154A31E59B49F00515B37 /* YFmineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFmineCell.m; sourceTree = "<group>"; };
+		052154A51E59B50000515B37 /* YFmineTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFmineTableView.h; sourceTree = "<group>"; };
+		052154A61E59B50000515B37 /* YFmineTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFmineTableView.m; sourceTree = "<group>"; };
+		052154A81E59B59F00515B37 /* YFBaseNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFBaseNav.h; sourceTree = "<group>"; };
+		052154A91E59B59F00515B37 /* YFBaseNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBaseNav.m; sourceTree = "<group>"; };
+		052154AB1E59B81F00515B37 /* YFBaseTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFBaseTabBarVC.h; sourceTree = "<group>"; };
+		052154AC1E59B81F00515B37 /* YFBaseTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFBaseTabBarVC.m; sourceTree = "<group>"; };
+		052154AE1E59C2E000515B37 /* PhotoShowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoShowManager.h; sourceTree = "<group>"; };
+		052154AF1E59C2E000515B37 /* PhotoShowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoShowManager.m; sourceTree = "<group>"; };
 		052508271E570DEE0081FECC /* CommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentModel.h; sourceTree = "<group>"; };
 		052508281E570DEE0081FECC /* CommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentModel.m; sourceTree = "<group>"; };
 		0536B1001E56989500CBFC09 /* NBANews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBANews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +150,15 @@
 		055E30771E58332600832B3D /* YFDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFDefaultsManager.m; sourceTree = "<group>"; };
 		055E30791E58395200832B3D /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
 		055E307A1E58395200832B3D /* LoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
+		055E30861E583C4500832B3D /* VideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		055E30871E583C4500832B3D /* VideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		055E308C1E583CCC00832B3D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		055E308E1E583CD100832B3D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		055E31051E584AA100832B3D /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		055E31061E584AA100832B3D /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
+		055E31081E584C3200832B3D /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		055E31091E584C3200832B3D /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		055E310A1E584C3200832B3D /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		05E715181E56C1BC00A44893 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		05E715191E56C1BC00A44893 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		05E7151A1E56C1BC00A44893 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
@@ -140,6 +185,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				055E308F1E583CD100832B3D /* AVKit.framework in Frameworks */,
+				055E308D1E583CCC00832B3D /* AVFoundation.framework in Frameworks */,
 				05E715281E56D71600A44893 /* WebKit.framework in Frameworks */,
 				369A0B8CF5749F71DBF7EDCB /* Pods_NBANews.framework in Frameworks */,
 			);
@@ -266,6 +313,12 @@
 				055E306A1E58095000832B3D /* Login */,
 				055E30671E5807E700832B3D /* MineVC.h */,
 				055E30681E5807E700832B3D /* MineVC.m */,
+				052154A21E59B49F00515B37 /* YFmineCell.h */,
+				052154A31E59B49F00515B37 /* YFmineCell.m */,
+				052154A51E59B50000515B37 /* YFmineTableView.h */,
+				052154A61E59B50000515B37 /* YFmineTableView.m */,
+				052154811E599BDA00515B37 /* LikeVC.h */,
+				052154821E599BDA00515B37 /* LikeVC.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -278,6 +331,16 @@
 				0536B13F1E56A42D00CBFC09 /* AppDelegate+ThrSDK.h */,
 				0536B1401E56A42D00CBFC09 /* AppDelegate+ThrSDK.m */,
 				0536B1421E56A96B00CBFC09 /* Common.pch */,
+				052154931E59A7E800515B37 /* YFBaseCell.h */,
+				052154941E59A7E800515B37 /* YFBaseCell.m */,
+				052154961E59AEA200515B37 /* YFBaseTableView.h */,
+				052154971E59AEA200515B37 /* YFBaseTableView.m */,
+				0521549C1E59B1DF00515B37 /* YFBaseCollectionCell.h */,
+				0521549D1E59B1DF00515B37 /* YFBaseCollectionCell.m */,
+				052154A81E59B59F00515B37 /* YFBaseNav.h */,
+				052154A91E59B59F00515B37 /* YFBaseNav.m */,
+				052154AB1E59B81F00515B37 /* YFBaseTabBarVC.h */,
+				052154AC1E59B81F00515B37 /* YFBaseTabBarVC.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -296,12 +359,16 @@
 		0536B13B1E569C6500CBFC09 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				052154AE1E59C2E000515B37 /* PhotoShowManager.h */,
+				052154AF1E59C2E000515B37 /* PhotoShowManager.m */,
 				05E715201E56CEA000A44893 /* YFMYRefresh.h */,
 				05E715211E56CEA000A44893 /* YFMYRefresh.m */,
 				055E30761E58332600832B3D /* YFDefaultsManager.h */,
 				055E30771E58332600832B3D /* YFDefaultsManager.m */,
 				055E30791E58395200832B3D /* LoginManager.h */,
 				055E307A1E58395200832B3D /* LoginManager.m */,
+				052154901E59A58300515B37 /* UILabel+TextColor.h */,
+				052154911E59A58300515B37 /* UILabel+TextColor.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -309,6 +376,8 @@
 		0536B1431E56A9C900CBFC09 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				055E30861E583C4500832B3D /* VideoModel.h */,
+				055E30871E583C4500832B3D /* VideoModel.m */,
 				0536B1441E56A9E400CBFC09 /* HomeModel.h */,
 				0536B1451E56A9E400CBFC09 /* HomeModel.m */,
 				052508271E570DEE0081FECC /* CommentModel.h */,
@@ -322,6 +391,11 @@
 		055E30661E5805CF00832B3D /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				055E31051E584AA100832B3D /* VideoVC.h */,
+				055E31061E584AA100832B3D /* VideoVC.m */,
+				055E31081E584C3200832B3D /* VideoCell.h */,
+				055E31091E584C3200832B3D /* VideoCell.m */,
+				055E310A1E584C3200832B3D /* VideoCell.xib */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -375,6 +449,8 @@
 		6731591A597B0EE456C382AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				055E308E1E583CD100832B3D /* AVKit.framework */,
+				055E308C1E583CCC00832B3D /* AVFoundation.framework */,
 				05E715271E56D71600A44893 /* WebKit.framework */,
 				5D7779F7BCA9F077EB1483E5 /* Pods_NBANews.framework */,
 			);
@@ -495,6 +571,7 @@
 			files = (
 				055E30541E57E4BA00832B3D /* CommentFootView.xib in Resources */,
 				05E7152C1E56D77700A44893 /* DetailsVC.storyboard in Resources */,
+				055E310C1E584C3200832B3D /* VideoCell.xib in Resources */,
 				0536B1131E56989500CBFC09 /* LaunchScreen.storyboard in Resources */,
 				0536B1101E56989500CBFC09 /* Assets.xcassets in Resources */,
 				05E715351E56E13C00A44893 /* CommentCell.xib in Resources */,
@@ -578,21 +655,34 @@
 				055E30691E5807E700832B3D /* MineVC.m in Sources */,
 				055E306D1E58097D00832B3D /* LoginVC.m in Sources */,
 				05E715341E56E13C00A44893 /* CommentCell.m in Sources */,
+				052154921E59A58300515B37 /* UILabel+TextColor.m in Sources */,
+				055E31071E584AA100832B3D /* VideoVC.m in Sources */,
+				052154A41E59B49F00515B37 /* YFmineCell.m in Sources */,
+				055E30881E583C4500832B3D /* VideoModel.m in Sources */,
 				05E715261E56D67800A44893 /* DetailsVC.m in Sources */,
+				052154981E59AEA200515B37 /* YFBaseTableView.m in Sources */,
 				05E7151B1E56C1BC00A44893 /* HomeCell.m in Sources */,
 				0536B1461E56A9E400CBFC09 /* HomeModel.m in Sources */,
 				055E30611E57F82700832B3D /* ClassRightCell.m in Sources */,
 				05E7151F1E56CADD00A44893 /* CoreScrollView.m in Sources */,
+				052154951E59A7E800515B37 /* YFBaseCell.m in Sources */,
+				052154831E599BDA00515B37 /* LikeVC.m in Sources */,
+				052154AA1E59B59F00515B37 /* YFBaseNav.m in Sources */,
 				055E30701E58098A00832B3D /* RegisterVC.m in Sources */,
 				055E305D1E57F10400832B3D /* YFRClassifyightView.m in Sources */,
+				055E310B1E584C3200832B3D /* VideoCell.m in Sources */,
+				0521549E1E59B1DF00515B37 /* YFBaseCollectionCell.m in Sources */,
+				052154A71E59B50000515B37 /* YFmineTableView.m in Sources */,
 				055E305A1E57E93600832B3D /* YFSearchView.m in Sources */,
 				055E30521E57E4B300832B3D /* CommentFootView.m in Sources */,
+				052154AD1E59B81F00515B37 /* YFBaseTabBarVC.m in Sources */,
 				05E715301E56E09200A44893 /* CommentVC.m in Sources */,
 				055E30751E582EBF00832B3D /* UserModel.m in Sources */,
 				0536B13E1E56A00E00CBFC09 /* HomeVC.m in Sources */,
 				05E715221E56CEA000A44893 /* YFMYRefresh.m in Sources */,
 				0536B1081E56989500CBFC09 /* AppDelegate.m in Sources */,
 				055E30651E57FA7F00832B3D /* ClassCenterView.m in Sources */,
+				052154B01E59C2E000515B37 /* PhotoShowManager.m in Sources */,
 				055E30781E58332600832B3D /* YFDefaultsManager.m in Sources */,
 				052508291E570DEE0081FECC /* CommentModel.m in Sources */,
 				055E307B1E58395200832B3D /* LoginManager.m in Sources */,

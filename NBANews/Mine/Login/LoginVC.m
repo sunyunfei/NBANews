@@ -69,7 +69,7 @@
                 [self dismissViewControllerAnimated:YES completion:^{
                     //记录登陆的状态
                     [YFDefaultsManager saveBoolDefaults:login_status withData:YES];
-                    [YFDefaultsManager saveNumber:login_userId withData:[obj objectForKey:@"user_id"]];
+                    [YFDefaultsManager saveNumber:login_userId withData:[obj objectForKey:@"object_id"]];
                     //发出一个通知，登陆成功
                     [[NSNotificationCenter defaultCenter] postNotificationName:LOGIN_SUCCSESS object:nil];
                 }];

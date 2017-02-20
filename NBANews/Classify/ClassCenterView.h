@@ -13,7 +13,7 @@
 - (void)skipVcToShow:(HomeModel *)model;//跳转界面
 
 @end
-@interface ClassCenterView : UITableView
+@interface ClassCenterView : YFBaseTableView
 @property(nonatomic,copy)NSString *typeName;//查询条件
 @property(nonatomic,weak)id<ClassCenterViewDelegate>centerDelegate;
 @end

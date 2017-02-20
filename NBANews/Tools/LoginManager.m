@@ -15,7 +15,7 @@
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
     LoginVC *loginVC = [story instantiateViewControllerWithIdentifier:@"LoginVC"];
     loginVC.title = @"登陆";
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    YFBaseNav *nav = [[YFBaseNav alloc]initWithRootViewController:loginVC];
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:nav animated:YES completion:nil];
 }
 @end

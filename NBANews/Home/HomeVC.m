@@ -13,7 +13,7 @@
 #import "DetailsVC.h"
 static NSString *home_cell = @"HomeCell";//用作注册单元格用
 @interface HomeVC ()<UITableViewDelegate,UITableViewDataSource,CoreScrollViewDelegate>
-@property(nonatomic,strong)UITableView *tableView;//数据表
+@property(nonatomic,strong)YFBaseTableView *tableView;//数据表
 @property(nonatomic,strong)NSMutableArray *homeArray;//data
 @property(nonatomic,strong)NSMutableArray *headerArray;//表头数据
 @property(nonatomic,strong)CoreScrollView *scrollView;//无限轮播
@@ -52,7 +52,7 @@ static NSString *home_cell = @"HomeCell";//用作注册单元格用
             
             for (BmobObject *obj in array) {
                 
-                HomeModel *model = [[HomeModel alloc]initWithBmob:obj];
+                HomeModel *model = [[HomeModel alloc]initWithBmob:obj isLikeVC:NO];
                 [_homeArray addObject:model];
             }
             
@@ -84,7 +84,7 @@ static NSString *home_cell = @"HomeCell";//用作注册单元格用
             
             for (BmobObject *obj in array) {
                 
-                HomeModel *model = [[HomeModel alloc]initWithBmob:obj];
+                HomeModel *model = [[HomeModel alloc]initWithBmob:obj isLikeVC:NO];
                 [_headerArray addObject:model];
             }
             //刷新表
@@ -101,10 +101,11 @@ static NSString *home_cell = @"HomeCell";//用作注册单元格用
 //表加载
 - (void)p_loadTableView{
 
-    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    self.tableView = [[YFBaseTableView alloc]initWithFrame:self.view.bounds];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.rowHeight = 90;
+    [self.tableView setViewColor];
     self.tableView.separatorColor = [UIColor lightGrayColor];
     //注册单元格
     [self.tableView registerNib:[UINib nibWithNibName:home_cell bundle:nil] forCellReuseIdentifier:home_cell];

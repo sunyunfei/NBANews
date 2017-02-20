@@ -6,8 +6,8 @@
 //  Copyright © 2017年 孙云飞. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YFBaseCell.h"
 #import "CommentModel.h"
-@interface CommentCell : UITableViewCell
+@interface CommentCell : YFBaseCell
 @property(nonatomic,strong)CommentModel *commentModel;
 @end

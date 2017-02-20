@@ -10,7 +10,7 @@
 
 @implementation HomeModel
 //创建
-- (instancetype)initWithBmob:(BmobObject *)bmobObject{
+- (instancetype)initWithBmob:(BmobObject *)bmobObject isLikeVC:(BOOL)flag{
 
     self = [super init];
     //数据转模型
@@ -32,11 +32,16 @@
         if ([bmobObject objectForKey:@"home_type"]) {
             self.home_type = [bmobObject objectForKey:@"home_type"];
         }
+        if (flag) {
+            self.home_time = [bmobObject objectForKey:@"home_time"];
+        }else{
         
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+            [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+            
+            self.home_time = [dateFormatter stringFromDate:bmobObject.updatedAt];
+        }
         
-        self.home_time = [dateFormatter stringFromDate:bmobObject.updatedAt];
     }
     return self;
 }

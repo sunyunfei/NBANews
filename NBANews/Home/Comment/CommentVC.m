@@ -11,8 +11,8 @@
 #import "CommentModel.h"
 #import "CommentFootView.h"
 static NSString *comment_cell =@"CommentCell";
-@interface CommentVC ()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *tableView;//数据表
+@interface CommentVC ()<UITableViewDelegate,UITableViewDataSource,CommentFootViewDelegate>
+@property(nonatomic,strong)YFBaseTableView *tableView;//数据表
 @property(nonatomic,strong)NSMutableArray *commentArray;//数据
 @property(nonatomic,assign)int lastIndex;//最后一条数据的位置
 @end
@@ -66,9 +66,10 @@ static NSString *comment_cell =@"CommentCell";
 
 - (void)p_loadTableView{
 
-    self.tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    self.tableView = [[YFBaseTableView alloc]initWithFrame:self.view.bounds];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    [self.tableView setViewColor];
     //注册
     [self.tableView registerNib:[UINib nibWithNibName:comment_cell bundle:nil] forCellReuseIdentifier:comment_cell];
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 1)];
@@ -95,6 +96,7 @@ static NSString *comment_cell =@"CommentCell";
     CommentFootView *footView = [CommentFootView createView];
     footView.frame = CGRectMake(0, K_H - 49, K_W, 49);
     footView.homeId = self.homeId;
+    footView.delegate = self;
     [self.view addSubview:footView];
 }
 #pragma mark ----delegate
@@ -115,5 +117,11 @@ static NSString *comment_cell =@"CommentCell";
         
         cell.commentModel = self.commentArray[indexPath.row];
     }];
+}
+
+//刷新评论数据
+- (void)refreshData{
+
+    [self.tableView.mj_header beginRefreshing];
 }
 @end

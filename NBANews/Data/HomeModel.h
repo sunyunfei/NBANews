@@ -16,5 +16,5 @@
 @property(nonatomic,copy)NSString *home_url;
 @property(nonatomic,copy)NSString *home_type;
 //创建
-- (instancetype)initWithBmob:(BmobObject *)bmobObject;
+- (instancetype)initWithBmob:(BmobObject *)bmobObject isLikeVC:(BOOL)flag;
 @end

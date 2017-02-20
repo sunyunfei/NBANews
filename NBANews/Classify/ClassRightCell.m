@@ -10,6 +10,11 @@
 
 @implementation ClassRightCell
 
+- (void)awakeFromNib{
+
+    [super awakeFromNib];
+    [self setBaseColorForGlobal];
+}
 - (void)setTypeName:(NSString *)typeName{
 
     _typeName = typeName;

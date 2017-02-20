@@ -6,9 +6,9 @@
 //  Copyright © 2017年 孙云飞. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YFBaseCell.h"
 
-@interface ClassRightCell : UITableViewCell
+@interface ClassRightCell : YFBaseCell
 @property (weak, nonatomic) IBOutlet UILabel *typeNameLabel;
 @property(nonatomic,copy)NSString *typeName;
 @end
